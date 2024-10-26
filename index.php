@@ -100,7 +100,7 @@ $sqlsearh="WHERE contact_name LIKE '%$search%' or contact_gender LIKE '%$search%
 
      <table class="table table-bordered-bg-secondary">
         <tr>
-            <th>#</th> <th>NAME</th><th>Gender</th><th>Address</th> <th>Operation</th>
+            <th>#</th> <th>ID</th> <th>NAME</th><th>Gender</th><th>Address</th> <th>Operation</th>
         </tr> 
    <?php 
    $limit=2;
@@ -117,6 +117,7 @@ $sqlsearh="WHERE contact_name LIKE '%$search%' or contact_gender LIKE '%$search%
        // echo '<pre>'; print_r($value);    echo '</pre>';
        echo '<tr>
           <td> '.$abc++.'</td>
+          <td> '.$value["contact_id"].'</td>
           <td> '.$value["contact_name"].'</td>
           <td> '.$value["contact_gender"].'</td>
           <td> '.$value["contact_address"].'</td>
